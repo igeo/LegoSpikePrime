@@ -1,0 +1,241 @@
+{
+    "manifiest": {
+        "autoDelete": false,
+        "created": "2022-02-12T06:56:56.372Z",
+        "extensions": [
+            "flipperevents",
+            "flippermotor",
+            "flippermove"
+        ],
+        "extraFiles": [],
+        "hardware": {
+            "?j]HwszhzU~ks:sjP?x%": {
+                "type": "flipper"
+            }
+        },
+        "id": "XuR5U1AjheuN",
+        "lastsaved": "2022-02-12T06:57:07.660Z",
+        "name": "Project_word_block",
+        "showAllBlocks": false,
+        "size": 20686,
+        "slotIndex": 0,
+        "state": {
+            "canvasDrawerTab": "monitorTab",
+            "playMode": "download"
+        },
+        "type": "word-blocks",
+        "version": 12,
+        "workspaceX": 120,
+        "workspaceY": 120,
+        "zoomLevel": 0.675
+    },
+    "scratch": {
+        "extensions": [
+            "flipperevents",
+            "flippermotor",
+            "flippermove"
+        ],
+        "meta": {
+            "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
+            "semver": "3.0.0",
+            "vm": "0.2.0-prerelease.20200512204241"
+        },
+        "monitors": [],
+        "targets": [
+            {
+                "blocks": {},
+                "broadcasts": {},
+                "comments": {},
+                "costumes": [
+                    {
+                        "assetId": "deadc057000000000000000000000000",
+                        "bitmapResolution": 1,
+                        "dataFormat": "svg",
+                        "md5ext": "deadc057000000000000000000000000.svg",
+                        "name": "backdrop1",
+                        "rotationCenterX": 47,
+                        "rotationCenterY": 55
+                    }
+                ],
+                "currentCostume": 0,
+                "isStage": true,
+                "lists": {},
+                "name": "Stage",
+                "sounds": [],
+                "tempo": 60,
+                "textToSpeechLanguage": null,
+                "variables": {},
+                "videoState": "on",
+                "videoTransparency": 50,
+                "volume": 0
+            },
+            {
+                "blocks": {
+                    "Dpasi|rM_X5F=(St`M;5": {
+                        "fields": {
+                            "field_flippermove_custom-icon-direction": [
+                                "forward",
+                                null
+                            ]
+                        },
+                        "inputs": {},
+                        "next": null,
+                        "opcode": "flippermove_custom-icon-direction",
+                        "parent": "G,$7P4ULO:?kAu`no4Pz",
+                        "shadow": true,
+                        "topLevel": false
+                    },
+                    "G,$7P4ULO:?kAu`no4Pz": {
+                        "fields": {
+                            "UNIT": [
+                                "cm",
+                                null
+                            ]
+                        },
+                        "inputs": {
+                            "DIRECTION": [
+                                1,
+                                "Dpasi|rM_X5F=(St`M;5"
+                            ],
+                            "VALUE": [
+                                1,
+                                [
+                                    4,
+                                    "10"
+                                ]
+                            ]
+                        },
+                        "next": null,
+                        "opcode": "flippermove_move",
+                        "parent": "|VZ^o|%Hroc+|7THuz-N",
+                        "shadow": false,
+                        "topLevel": false
+                    },
+                    "IGq7*kRNm.;B^s)`Hr}w": {
+                        "fields": {},
+                        "inputs": {
+                            "PORT": [
+                                1,
+                                "Nv*z=P$D!zJOciRtJ$nN"
+                            ]
+                        },
+                        "next": null,
+                        "opcode": "flippermotor_speed",
+                        "parent": null,
+                        "shadow": false,
+                        "topLevel": true,
+                        "x": 1052,
+                        "y": 448
+                    },
+                    "Nv*z=P$D!zJOciRtJ$nN": {
+                        "fields": {
+                            "field_flippermotor_single-motor-selector": [
+                                "A",
+                                null
+                            ]
+                        },
+                        "inputs": {},
+                        "next": null,
+                        "opcode": "flippermotor_single-motor-selector",
+                        "parent": "IGq7*kRNm.;B^s)`Hr}w",
+                        "shadow": true,
+                        "topLevel": false
+                    },
+                    "SIe@1z23$C$5i}2rs?9_": {
+                        "fields": {
+                            "field_flippermotor_multiple-port-selector": [
+                                "A",
+                                null
+                            ]
+                        },
+                        "inputs": {},
+                        "next": null,
+                        "opcode": "flippermotor_multiple-port-selector",
+                        "parent": "|VZ^o|%Hroc+|7THuz-N",
+                        "shadow": true,
+                        "topLevel": false
+                    },
+                    "nG7hHQtw8`:pHcre/sXs": {
+                        "fields": {
+                            "field_flippermotor_custom-icon-direction": [
+                                "clockwise",
+                                null
+                            ]
+                        },
+                        "inputs": {},
+                        "next": null,
+                        "opcode": "flippermotor_custom-icon-direction",
+                        "parent": "|VZ^o|%Hroc+|7THuz-N",
+                        "shadow": true,
+                        "topLevel": false
+                    },
+                    "zziM98yvm_y63y-FgZb5": {
+                        "fields": {},
+                        "inputs": {},
+                        "next": "|VZ^o|%Hroc+|7THuz-N",
+                        "opcode": "flipperevents_whenProgramStarts",
+                        "parent": null,
+                        "shadow": false,
+                        "topLevel": true,
+                        "x": 366,
+                        "y": 120
+                    },
+                    "|VZ^o|%Hroc+|7THuz-N": {
+                        "fields": {},
+                        "inputs": {
+                            "DIRECTION": [
+                                1,
+                                "nG7hHQtw8`:pHcre/sXs"
+                            ],
+                            "PORT": [
+                                1,
+                                "SIe@1z23$C$5i}2rs?9_"
+                            ]
+                        },
+                        "next": "G,$7P4ULO:?kAu`no4Pz",
+                        "opcode": "flippermotor_motorStartDirection",
+                        "parent": "zziM98yvm_y63y-FgZb5",
+                        "shadow": false,
+                        "topLevel": false
+                    }
+                },
+                "broadcasts": {},
+                "comments": {},
+                "costumes": [
+                    {
+                        "assetId": "deadc057000000000000000000000000",
+                        "bitmapResolution": 1,
+                        "dataFormat": "svg",
+                        "md5ext": "deadc057000000000000000000000000.svg",
+                        "name": "psUeLmRNhXfapgKFmzlM",
+                        "rotationCenterX": 240,
+                        "rotationCenterY": 180
+                    }
+                ],
+                "currentCostume": 0,
+                "direction": 90,
+                "draggable": false,
+                "isStage": false,
+                "lists": {},
+                "name": "hNFdSyn5uDPWIECTRSeP",
+                "rotationStyle": "all around",
+                "size": 100,
+                "sounds": [
+                    {
+                        "assetId": "1b8b032b06360a6cf7c31d86bddd144b",
+                        "dataFormat": "wav",
+                        "md5ext": "1b8b032b06360a6cf7c31d86bddd144b.wav",
+                        "name": "Cat Meow 1",
+                        "rate": 48000,
+                        "sampleCount": 60000
+                    }
+                ],
+                "variables": {},
+                "visible": true,
+                "volume": 100,
+                "x": 0,
+                "y": 0
+            }
+        ]
+    }
+}
