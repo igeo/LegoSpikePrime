@@ -5,7 +5,8 @@
         "extensions": [
             "flipperevents",
             "flippermotor",
-            "flippermove"
+            "flippermove",
+            "flipperdisplay"
         ],
         "extraFiles": [],
         "hardware": {
@@ -14,7 +15,7 @@
             }
         },
         "id": "XuR5U1AjheuN",
-        "lastsaved": "2022-02-12T06:57:07.660Z",
+        "lastsaved": "2022-02-12T08:04:31.027Z",
         "name": "Project_word_block",
         "showAllBlocks": false,
         "size": 20686,
@@ -25,15 +26,16 @@
         },
         "type": "word-blocks",
         "version": 12,
-        "workspaceX": 120,
-        "workspaceY": 120,
+        "workspaceX": -37,
+        "workspaceY": 134,
         "zoomLevel": 0.675
     },
     "scratch": {
         "extensions": [
             "flipperevents",
             "flippermotor",
-            "flippermove"
+            "flippermove",
+            "flipperdisplay"
         ],
         "meta": {
             "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36",
@@ -71,6 +73,67 @@
             },
             {
                 "blocks": {
+                    "%pZJ[-7@(`BMiBW3}QZV": {
+                        "fields": {
+                            "field_flippermotor_multiple-port-selector": [
+                                "A",
+                                null
+                            ]
+                        },
+                        "inputs": {},
+                        "next": null,
+                        "opcode": "flippermotor_multiple-port-selector",
+                        "parent": "]*K1secU5R1MV5eG@m8g",
+                        "shadow": true,
+                        "topLevel": false
+                    },
+                    ")OFA1kz[O_!Yi!;)}Q]h": {
+                        "fields": {
+                            "UNIT": [
+                                "cm",
+                                null
+                            ]
+                        },
+                        "inputs": {
+                            "STEERING": [
+                                1,
+                                "i{vv-x4nD7X+,B6RSco*"
+                            ],
+                            "VALUE": [
+                                1,
+                                [
+                                    4,
+                                    "10"
+                                ]
+                            ]
+                        },
+                        "next": "*5PB(?:P;5d!jSPN@jlg",
+                        "opcode": "flippermove_steer",
+                        "parent": "]*K1secU5R1MV5eG@m8g",
+                        "shadow": false,
+                        "topLevel": false
+                    },
+                    "*5PB(?:P;5d!jSPN@jlg": {
+                        "fields": {},
+                        "inputs": {
+                            "SUBSTACK": [
+                                2,
+                                "|t52DTV@j!A~}5LZR02;"
+                            ],
+                            "TIMES": [
+                                1,
+                                [
+                                    6,
+                                    "10"
+                                ]
+                            ]
+                        },
+                        "next": null,
+                        "opcode": "control_repeat",
+                        "parent": ")OFA1kz[O_!Yi!;)}Q]h",
+                        "shadow": false,
+                        "topLevel": false
+                    },
                     "Dpasi|rM_X5F=(St`M;5": {
                         "fields": {
                             "field_flippermove_custom-icon-direction": [
@@ -105,7 +168,7 @@
                                 ]
                             ]
                         },
-                        "next": null,
+                        "next": "]*K1secU5R1MV5eG@m8g",
                         "opcode": "flippermove_move",
                         "parent": "|VZ^o|%Hroc+|7THuz-N",
                         "shadow": false,
@@ -155,6 +218,41 @@
                         "shadow": true,
                         "topLevel": false
                     },
+                    "]*K1secU5R1MV5eG@m8g": {
+                        "fields": {},
+                        "inputs": {
+                            "PORT": [
+                                1,
+                                "%pZJ[-7@(`BMiBW3}QZV"
+                            ],
+                            "SPEED": [
+                                1,
+                                [
+                                    4,
+                                    "75"
+                                ]
+                            ]
+                        },
+                        "next": ")OFA1kz[O_!Yi!;)}Q]h",
+                        "opcode": "flippermotor_motorSetSpeed",
+                        "parent": "G,$7P4ULO:?kAu`no4Pz",
+                        "shadow": false,
+                        "topLevel": false
+                    },
+                    "i{vv-x4nD7X+,B6RSco*": {
+                        "fields": {
+                            "field_flippermove_rotation-wheel": [
+                                "30",
+                                null
+                            ]
+                        },
+                        "inputs": {},
+                        "next": null,
+                        "opcode": "flippermove_rotation-wheel",
+                        "parent": ")OFA1kz[O_!Yi!;)}Q]h",
+                        "shadow": true,
+                        "topLevel": false
+                    },
                     "nG7hHQtw8`:pHcre/sXs": {
                         "fields": {
                             "field_flippermotor_custom-icon-direction": [
@@ -166,6 +264,20 @@
                         "next": null,
                         "opcode": "flippermotor_custom-icon-direction",
                         "parent": "|VZ^o|%Hroc+|7THuz-N",
+                        "shadow": true,
+                        "topLevel": false
+                    },
+                    "zrpLG(%MW(z./y$!scdS": {
+                        "fields": {
+                            "field_flipperdisplay_custom-matrix-port": [
+                                "M1",
+                                null
+                            ]
+                        },
+                        "inputs": {},
+                        "next": null,
+                        "opcode": "flipperdisplay_custom-matrix-port",
+                        "parent": "|t52DTV@j!A~}5LZR02;",
                         "shadow": true,
                         "topLevel": false
                     },
@@ -195,6 +307,27 @@
                         "next": "G,$7P4ULO:?kAu`no4Pz",
                         "opcode": "flippermotor_motorStartDirection",
                         "parent": "zziM98yvm_y63y-FgZb5",
+                        "shadow": false,
+                        "topLevel": false
+                    },
+                    "|t52DTV@j!A~}5LZR02;": {
+                        "fields": {},
+                        "inputs": {
+                            "PORT": [
+                                1,
+                                "zrpLG(%MW(z./y$!scdS"
+                            ],
+                            "TEXT": [
+                                1,
+                                [
+                                    10,
+                                    "Hello"
+                                ]
+                            ]
+                        },
+                        "next": null,
+                        "opcode": "flipperdisplay_ledMatrixText",
+                        "parent": "*5PB(?:P;5d!jSPN@jlg",
                         "shadow": false,
                         "topLevel": false
                     }
